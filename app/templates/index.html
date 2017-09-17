@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Sample Interactive Plot of Iris Data</h1>
+  <p>
+    This is just a dumb example showing we can plug an interactive Bokeh plot
+    into a Flask app.
+  </p>
+  <form action="/">
+    <select name="feature_name">
+      {% for feature in feature_names %}
+        {% if feature == current_feature_name %}
+          <option selected value="{{ feature }}">{{ feature }}</option> 
+        {% else %} 
+          <option value="{{ feature }}">{{ feature }}</option> 
+        {% endif %}
+      {% endfor %}
+    </select>
+    <input type="submit">
+  </form>
+
+  {{ script|safe }}
+  {{ div|safe }}
+
+{% endblock %}
