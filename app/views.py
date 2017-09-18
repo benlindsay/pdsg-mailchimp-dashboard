@@ -4,12 +4,12 @@
 # Copyright (c) 2017 Ben Lindsay <benjlindsay@gmail.com>
 
 from flask import render_template, request
-from app import app
+from app import flaskapp
 from app.data import feature_names
 from app.plot import create_figure
 from bokeh.embed import components
 
-@app.route('/')
+@flaskapp.route('/')
 def index():
     # Determine the selected feature
     current_feature_name = request.args.get("feature_name")
