@@ -3,5 +3,5 @@
 #
 # Copyright (c) 2017 Ben Lindsay <benjlindsay@gmail.com>
 
-from app import app
-app.run(debug=True)
+from app import flaskapp
+flaskapp.run(debug=True)
