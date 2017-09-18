@@ -4,10 +4,10 @@ A simple Flask template that supports Bokeh plots
 
 ## Getting Started
 
-You probably want to create a fresh virtual environment. I like using Conda. If we want to put this upon Heroku eventually, it looks like the latest Python version they support is 3.4.1, so:
+You probably want to create a fresh virtual environment. I like using `conda`, but you can use `virtualenv` as well.
 
 ```
-$ conda create -n mynewenv python=3.4.1
+$ conda create -n mynewenv python=3.6.2
 $ . activate mynewenv
 (mynewenv) $ cd /path/to/flask-bokeh-template
 (mynewenv) $ pip install -r requirements.txt
