@@ -6,6 +6,7 @@
 from app import flaskapp
 import os
 
+flaskapp.secret_key = os.urandom(12)
+
 if __name__ == '__main__':
-    flaskapp.secret_key = os.urandom(12)
     flaskapp.run(debug=True)
