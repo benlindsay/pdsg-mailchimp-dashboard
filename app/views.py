@@ -8,7 +8,7 @@ from app import flaskapp
 from app.data import feature_names
 from app.plot import create_figure
 from bokeh.embed import components
-from app.secret_settings import (
+from app.settings import (
         FLASK_USERNAME,
         FLASK_PASSWORD,
         MAILCHIMP_USERNAME,

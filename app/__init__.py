@@ -10,3 +10,4 @@ flaskapp = Flask(__name__)
 
 from app import data
 from app import views
+from app import settings
