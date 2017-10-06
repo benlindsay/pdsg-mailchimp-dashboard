@@ -1,15 +1,15 @@
-# flask-bokeh-template
+# pdsg-mailchimp-dashboard
 
-A simple Flask template that supports Bokeh plots
+An interactive dashboard made with Flask and Bokeh. This is the source code for [http://pdsg-mailchimp-dashboard.herokuapp.com](http://pdsg-mailchimp-dashboard.herokuapp.com).
 
-## Getting Started
+## Running locally
 
 You probably want to create a fresh virtual environment. I like using `conda`, but you can use `virtualenv` as well.
 
 ```
 $ conda create -n mynewenv python=3.6.2
 $ . activate mynewenv
-(mynewenv) $ cd /path/to/flask-bokeh-template
+(mynewenv) $ cd /path/to/pdsg-mailchimp-dashboard
 (mynewenv) $ pip install -r requirements.txt
 ```
 
