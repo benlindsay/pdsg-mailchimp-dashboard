@@ -1,17 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Sample Interactive Plot of Iris Data</h1>
+  <h1>Number of MailChimp Signups</h1>
   <p>
-    This is just a dumb example showing we can plug an interactive Bokeh plot
-    into a Flask app.
+    Split signups by:
   </p>
   <form action="/">
-    <select name="feature_name">
-      {% for feature in feature_names %}
-        {% if feature == current_feature_name %}
-          <option selected value="{{ feature }}">{{ feature }}</option> 
-        {% else %} 
-          <option value="{{ feature }}">{{ feature }}</option> 
+    <select name="signups_over_time_opt">
+      {% for opt in signups_over_time_opts %}
+        {% if opt == current_signups_over_time_opt %}
+          <option selected value="{{ opt }}">{{ opt }}</option>
+        {% else %}
+          <option value="{{ opt }}">{{ opt }}</option>
         {% endif %}
       {% endfor %}
     </select>
