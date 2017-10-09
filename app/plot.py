@@ -3,28 +3,14 @@
 #
 # Copyright (c) 2017 Ben Lindsay <benjlindsay@gmail.com>
 
-# from bokeh.charts import Histogram
 from bokeh.models import ColumnDataSource, HoverTool, Legend
 from bokeh.plotting import figure, show
 from bokeh.palettes import Category20
-# from app.data import iris_df
 from app.data import df_members, df_school_and_degree, df_pivot
 import pandas as pd
 import numpy as np
 
 # Create the main plot
-# def create_figure(current_feature_name, bins):
-#     p = Histogram(iris_df, current_feature_name,
-#                   title=current_feature_name, color='Species',
-#                   bins=bins, legend='top_right', width=600, height=400)
-
-#     # Set the x axis label
-#     p.xaxis.axis_label = current_feature_name
-
-#     # Set the y axis label
-#     p.yaxis.axis_label = 'Count'
-#     return p
-
 def cum_signups(split_opt='School'):
     if split_opt != 'School':
         split_opt = 'School'
