@@ -3,7 +3,7 @@
 #
 # Copyright (c) 2017 Ben Lindsay <benjlindsay@gmail.com>
 
-from flask import render_template, request, session, flash
+from flask import render_template, request, session, flash, redirect
 from app import flaskapp
 from app.plot import cum_signups
 from bokeh.embed import components
@@ -35,4 +35,4 @@ def do_admin_login():
         session['logged_in'] = True
     else:
         flash('wrong password!')
-    return index()
+    return redirect('/')
