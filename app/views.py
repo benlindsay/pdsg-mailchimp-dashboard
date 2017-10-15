@@ -25,7 +25,7 @@ def index():
         # Embed plot into HTML via Flask Render
         script, div = components(plot)
         return render_template("index.html", script=script, div=div,
-                signups_over_time_opts=['School'],
+                signups_over_time_opts=['School', 'Degree'],
                 current_signups_over_time_opt=current_signups_over_time_opt)
 
 @flaskapp.route('/login', methods=['POST'])
